@@ -1,0 +1,27 @@
+h1 {
+          
+    color: rgb(231, 98, 198);
+    font-size: 36pt;
+    font-variant: normal;
+    
+    text-align: unset;
+  }
+p1 {
+  font-size: 12pt;
+}
+
+  label1 {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 26pt;
+  color: #1f37a1;
+}
+button{
+  font-weight: bold;
+}
+
+  body{
+    
+    background-color: #c1cbf7;
+    font-family: Garamond, Georgia, serif;
+}
