@@ -7,37 +7,17 @@ document.getElementById("botonCuadro").onclick = cifra
 
  /////////////
 function cifra (){
-    let i = 0               //contador
-    let cajaTexto = document.getElementById("cuadrotxt").value;      //valor del input
-    let offset = Number(document.getElementById('quantity').value);  // valor del offset
-    let resulta = ''        //mensaje cifrado a mostrar
-
-    while(i < cajaTexto.length){
-        
-        let chara = cajaTexto.slice(i, i +1);
-        let charaASCII = Number(chara.charCodeAt());
-        
-            if (charaASCII != 32){
-           
-            let formula = cipher.encode(offset, charaASCII);
-            let newChara = String.fromCharCode(formula);
-            
-            resulta += newChara
-            i ++
+                //contador
+    let cajaTexto = (document.getElementById("cuadrotxt").value);      //valor del input
+    let offset = parseInt(document.getElementById('quantity').value);  // valor del offset
+           //mensaje cifrado a mostrar
     
-                
-            } else {
-               
-                let newChara = ' ';
-                    resulta += newChara 
-                    i ++
-    
-                if (i == cajaTexto.length){
-                    document.getElementById('zzb').innerHTML = resulta
-                }
-            }
+    if (cajaTexto.length != 0){
+        document.getElementById('traduc').innerHTML = cipher.encode(offset, cajaTexto);
     }
 }
+
+   
 
 ///////////////// DESCIFRADO //////////////////////////
 
@@ -46,37 +26,13 @@ document.getElementById("botonCuadro2").onclick = descifra
 
  /////////////
 function descifra (){
-    let j = 0               //contador
+   //contador
     let cajaTexto = document.getElementById("cuadrotxt2").value;      //valor del input
-    let offset = Number(document.getElementById('quantityTwo').value);  // valor del offset
-    let resulta = ''        //mensaje descifrado a mostrar
-
-    while(j < cajaTexto.length){
-        
-        let chara = cajaTexto.slice(j, j +1);
-        let charaASCII = Number(chara.charCodeAt());
-            if (charaASCII != 32){
-           
-            let formula = cipher.decode(offset, charaASCII);
-            let newChara = String.fromCharCode(formula);
-            
-            resulta += newChara
-            j ++
-    
-                if (j == cajaTexto.length){
-                    document.getElementById('traduc2').innerHTML = resulta
-                }
-            } else {
-               
-                let newChara = ' ';
-                    resulta += newChara 
-                    j ++
-    
-                if (j == cajaTexto.length){
-                    document.getElementById('zzb').innerHTML = resulta
-                }
-            }       
-    }
+    let offset = parseInt(document.getElementById('quantityTwo').value);  // valor del offset
+       //mensaje descifrado a mostrar
+       if (cajaTexto.length != 0){
+           document.getElementById('traduc2').innerHTML = cipher.decode(offset,cajaTexto);
+        }
 }
 
 

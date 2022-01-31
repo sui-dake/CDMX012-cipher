@@ -1,6 +1,6 @@
 h1 {
           
-    color: rgb(231, 98, 198);
+    color: rgb(136, 80, 122);
     font-size: 36pt;
     font-variant: normal;
     
@@ -16,12 +16,28 @@ p1 {
   font-size: 26pt;
   color: #1f37a1;
 }
+textarea{
+  font-weight: lighter;
+  font-style: italic;
+  border-radius: 15px;
+}
+
+
+input{
+  font-weight: italic;
+  text-align: center;
+  border-radius: 15px;
+}
 button{
-  font-weight: bold;
+  font-weight: italic;
+  text-align: center;
+  font-size: 6;
+  border-radius: 15px;
 }
 
   body{
     
-    background-color: #c1cbf7;
+    background-color: #a3b1eb;
     font-family: Garamond, Georgia, serif;
+    text-align: center;
 }
