@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <h1>Caesar Cipher</h1>
+      <p1>Instrucciones: Introduce el mensaje a cifrar. 
+        <br>No debera contener la letra ñ, caracteres especiales 
+        o números. Debe estar en mayúsculas</p1>
+      <br><br><br><br>
+      
+  
+  <br>
+  <label for="offset">Elige el número que determinará el cifrado:</label>
+  <input type="number" id="quantity" name="quantity" min= "-65" max= "65">  
+  
+
+  
+  <br>
+      <label1 for="name">Mensaje:</label1>
+    <br>
+    <textarea id="cuadrotxt" name="cuadrotxt" rows="4" cols="50"></textarea>
+    <br><button id="botonCuadro">Cifrar</button>
+    <br><p id="traduc"></p>
+      
+
+
+    <br><br><br><br> 
+    <label for="offset2">Elige el número que determinará el descifrado:</label>
+    <input type="number" id="quantityTwo" name="quantityTwo" min= "-65" max= "65">  
+
+    <br>
+      <label1 for="name">Descifrado:</label1>
+    <br>
+    <textarea id="cuadrotxt2" name="cuadrotxt2" rows="4" cols="50"></textarea>
+    <br><button id="botonCuadro2">Descifrar</button>
+    <br><br><p2 id="traduc2"></p2><br>
+    
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
